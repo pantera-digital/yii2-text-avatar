@@ -8,7 +8,7 @@ composer require pantera-digital/yii2-text-avatar "@dev"
 
 ## Использование
 
-###Виджет
+### Виджет
 ~~~
 echo TextAvatarWidget::widget([
     'string' => 'Jon Smith',
@@ -19,7 +19,7 @@ echo TextAvatarWidget::widget([
     ],
 ]);
 ~~~
-#####Настройка
+##### Настройка
 ~~~
 strign => Строчка которую нужно преобразовать в текстовый аватар
 size => Размер аватара
@@ -30,11 +30,11 @@ tag => Html тег контейнера
 ~~~
 
 
-#####Хелпер
+##### Хелпер
 ~~~
-echo TextAvatarHelpe::generate("Jon Smith")
+echo TextAvatarHelper::generate("Jon Smith")
 ~~~
-#####Настройка
+##### Настройка
 Метод generate Применяет два параметра
 1) Строчка которую нужно преобразовать в текстовый аватар
 2) Массив с одним параметром limit указывает сколько слов должно быть обрезанно
