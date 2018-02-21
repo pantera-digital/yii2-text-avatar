@@ -21,7 +21,7 @@ class TextAvatarHelper
     public static function generate($string, $options = [])
     {
         //Удаляем все символы кроме букв и чисел
-        $string = preg_replace("/[^a-zа-я\s1-9]/si", "", $string);
+        $string = preg_replace("/[^a-zа-я\s1-9]/siu", "", $string);
         $limit = ArrayHelper::remove($options, 'limit', 2);
         $name = '';
         $words = explode(' ', $string);
